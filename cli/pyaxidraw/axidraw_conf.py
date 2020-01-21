@@ -29,15 +29,16 @@ Similarly, values set within Inkscape are ignored when using the CLI or
  python library.
 
 '''
+print('---- using custom config ----')
 
 # DEFAULT VALUES
 
-speed_pendown = 25      # Maximum plotting speed, when pen is down (1-100)
+speed_pendown = 15      # Maximum plotting speed, when pen is down (1-100)
 speed_penup = 75        # Maximum transit speed, when pen is up (1-100)
-accel = 75              # Acceleration rate factor (1-100)
+accel = 50              # Acceleration rate factor (1-100)
 
-pen_pos_up = 60         # Height of pen when raised (0-100)
-pen_pos_down = 30       # Height of pen when lowered (0-100)
+pen_pos_up = 70         # Height of pen when raised (0-100)
+pen_pos_down = 45       # Height of pen when lowered (0-100)
 
 pen_rate_raise = 75     # Rate of raising pen (1-100)
 pen_rate_lower = 50     # Rate of lowering pen (1-100)
@@ -46,7 +47,7 @@ pen_delay_up = 0        # Optional delay after pen is raised (ms)
 pen_delay_down = 0      # Optional delay after pen is lowered (ms)
 
 const_speed = False     # Use constant velocity mode when pen is down.
-report_time = False     # Report time elapsed.
+report_time = True     # Report time elapsed.
 default_layer = 1       # Layer(s) selected for layers mode (1-1000).
 
 copies = 1              # Copies to plot, or 0 for continuous plotting. Default: 1
@@ -59,7 +60,7 @@ rendering = 3           # Preview mode rendering option (0-3):
                             # 2: Render only pen-up movement
                             # 3: Render all movement (Default)
 
-model = 1               # AxiDraw Model (1-3). 
+model = 2               # AxiDraw Model (1-3). 
                             # 1: AxiDraw V2 or V3 (Default).
                             # 2: AxiDraw V3/A3 or SE/A3.
                             # 3: AxiDraw V3 XLX.
